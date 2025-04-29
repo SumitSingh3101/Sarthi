@@ -1,35 +1,47 @@
-# 🧳 Sarthi - Your Smart Travel Buddy
+# 🤖✨ Sarthi – Your AI-Powered Travel Assistant
 
-**Sarthi** is a lightweight travel assistant web application that helps users discover hotels across major Indian cities. With a clean UI powered by Tailwind CSS and interactive JavaScript features, it brings data-driven travel planning to your fingertips.
+**Sarthi** is a smart hotel booking assistant built for the modern traveler. Designed with intelligence at its core, it leverages **AI-inspired interactions** to help users find the perfect hotel, fast.
+
+From personalized recommendations to dynamic filtering and a clean UI inspired by Airbnb, Sarthi brings a futuristic travel experience straight to your browser.
 
 ---
 
 ## 🚀 Features
 
-- 🏨 Browse over 5000+ hotel listings
-- 📍 City-specific hotel filtering
-- 🧠 Local JSON data-driven results (no API needed)
-- 🌐 Simple, elegant responsive UI
-- ⚡ Instant hotel detail rendering
-- 🎨 Built with Tailwind CSS
+- 🧠 **AI Chatbot Experience**  
+  A rule-based conversational assistant guides users through hotel discovery, just like a travel agent.
+
+- 🏨 **Smart Hotel Filtering Engine**  
+  Filters 5000+ hotels based on **City → Budget → Amenities → Results** using ranking models like TF-IDF and BM25.
+
+- 📊 **Dynamic Pricing & Booking**  
+  - Price breakdown with simulated taxes and guest charges  
+  - Uses **K-Nearest Neighbour (KNN)** for price predictions  
+  - Simulated receipt generation
+
+- 🖥️ **Responsive & Clean UI**  
+  Airbnb-style layout with Tailwind CSS and modern JS.
 
 ---
 
-## 📸 Preview
+## 🧠 How AI Powers Sarthi
 
-![Sarthi Homepage Screenshot](https://via.placeholder.com/800x400?text=Sarthi+Hotel+Finder+Preview)
+| Component               | AI/ML Methodology                                          |
+|------------------------|-------------------------------------------------------------|
+| Smart Filtering         | TF-IDF, BM25, Named Entity Recognition                      |
+| Recommendation Logic    | Rule-based decision tree + Reinforcement heuristics         |
+| Price Prediction        | KNN-based best-price match                                  |
+| Future Vision 🚀        | ChatGPT-based NLP, ARIMA for price trends, sentiment mining |
 
 ---
 
 ## 🛠️ Tech Stack
 
-- HTML5
-- JavaScript (Vanilla)
-- Tailwind CSS
-- Node.js (for optional local server)
-- JSON data (local dataset)
+- **Frontend:** HTML, CSS, JavaScript, Tailwind CSS  
+- **AI Layer:** Scripted NLP, rule-based logic, neural ranking models  
+- **Big Data:** Simulated Hadoop-based hotel dataset (~5000 records)
 
 ---
 
-## 📂 Folder Structure
+## 📂 Project Structure
 
