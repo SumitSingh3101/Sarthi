@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarthi - Luxury Hotel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Sarthi</div>
+            <nav>
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Destinations</a>
+                <a href="#" class="nav-link">Special Offers</a>
+                <a href="#" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Discover Luxury Hotels</h1>
+            <p>Experience unparalleled comfort and elegance at India's finest hotels</p>
+        </section>
+
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search hotels...">
+                <button class="search-btn">
+                    <i class="ri-search-line"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="filters">
+            <div class="filter-group">
+                <label for="city">City</label>
+                <select id="city">
+                    <option value="">All Cities</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="price-range">Price Range</label>
+                <input type="range" id="price-range" min="0" max="15000" step="500" value="2000">
+                <div class="price-display">
+                    <span id="min-price">₹0</span>
+                    <span id="max-price">₹15000</span>
+                </div>
+            </div>
+            <div class="filter-group">
+                <label>Amenities</label>
+                <div class="amenities-container" id="amenities">
+                    <!-- Amenities will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <section class="hotels-container" id="hotels">
+            <!-- Hotels will be loaded dynamically -->
+        </section>
+    </main>
+
+    <!-- Chatbot Interface -->
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Hotel Assistant</h3>
+            <button class="close-chat" id="close-chat">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-message" placeholder="Type your message...">
+            <button id="send-message">
+                <i class="ri-send-plane-fill"></i>
+            </button>
+        </div>
+    </div>
+
+    <button class="chat-btn" id="open-chat">
+        <i class="ri-message-3-fill"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html> 

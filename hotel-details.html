@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Details - Sarthi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Sarthi</div>
+            <nav>
+                <a href="index.html" class="nav-link">Back to Search</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="hotel-details">
+            <div class="hotel-header">
+                <h1 id="hotel-name">Loading...</h1>
+                <div class="hotel-rating" id="hotel-rating">
+                    <i class="ri-star-fill"></i>
+                    <span>Loading...</span>
+                </div>
+            </div>
+
+            <div class="hotel-gallery" id="hotel-gallery">
+                <div class="gallery-main">
+                    <img src="" alt="" id="main-image" class="main-image">
+                </div>
+                <div class="gallery-thumbs" id="gallery-thumbs">
+                    <!-- Thumbnail images will be loaded here -->
+                </div>
+            </div>
+
+            <div class="hotel-info">
+                <div class="info-section">
+                    <h2>About the Hotel</h2>
+                    <p id="hotel-address">Loading...</p>
+                    <div class="amenities-list" id="amenities-list">
+                        <!-- Amenities will be loaded dynamically -->
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h2>Room Types</h2>
+                    <div class="room-types" id="room-types">
+                        <!-- Room types will be loaded dynamically -->
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h2>Contact Information</h2>
+                    <p id="contact-number">Loading...</p>
+                    <a href="#" id="website-link" target="_blank" class="contact-link">Visit Website</a>
+                </div>
+            </div>
+
+            <div class="booking-form">
+                <h2>Book Your Stay</h2>
+                <form id="booking-form" onsubmit="handleBookingSubmission(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="check-in">Check-in Date</label>
+                            <input type="date" id="check-in" name="check-in" required min="">
+                        </div>
+                        <div class="form-group">
+                            <label for="check-out">Check-out Date</label>
+                            <input type="date" id="check-out" name="check-out" required min="">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <input type="number" id="guests" name="guests" min="1" max="10" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="room-type">Room Type</label>
+                            <select id="room-type" name="room-type" required>
+                                <!-- Room types will be loaded dynamically -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="special-requests">Special Requests</label>
+                        <textarea id="special-requests" name="special-requests" rows="4" placeholder="Any special requirements or requests..."></textarea>
+                    </div>
+                    <div class="price-summary" id="price-summary">
+                        <!-- Price summary will be updated dynamically -->
+                    </div>
+                    <button type="submit" class="book-btn">
+                        <i class="ri-hotel-bed-line"></i>
+                        Confirm Booking
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Chatbot Interface -->
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Hotel Assistant</h3>
+            <button class="close-chat" id="close-chat">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-message" placeholder="Type your message...">
+            <button id="send-message">
+                <i class="ri-send-plane-fill"></i>
+            </button>
+        </div>
+    </div>
+
+    <button class="chat-btn" id="open-chat">
+        <i class="ri-message-3-fill"></i>
+    </button>
+
+    <script src="hotel-details.js"></script>
+</body>
+</html> 
